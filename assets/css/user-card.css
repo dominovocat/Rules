@@ -1,6 +1,7 @@
 :root {
   --text-color: #868686;
   --attention-color: #adb0b2;
+  --button-color: rgb(245, 241, 10);
   font-size: 20px;
 }
 .superUser {
@@ -10,9 +11,6 @@
   align-items: center;
   margin: 0 auto;
 }
-.shadow {
-}
-
 .userCard {
   min-height: 30vh;
   max-width: 600px;
@@ -25,10 +23,15 @@
   border-radius: 5px;
   font-family: sans-serif;
   position: relative;
-  box-shadow: 0px 0px 10px #777, /* Второй слой */ 0 -10px 0 -5px #eee,
-    /* Тень второго слоя */ 0 -10px 1px -4px rgba(0, 0, 0, 0.15),
-    /* Третий слой */ 0 -20px 0 -10px #eee,
-    /* Тень третьего слоя */ 0 -20px 1px -9px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 10px #777, 
+  /* Второй слой */ 
+  0 -10px 0 -5px #eee,
+  /* Тень второго слоя */ 
+  0 -10px 1px -4px rgba(0, 0, 0, 0.15),
+  /* Третий слой */ 
+  0 -20px 0 -10px #eee,
+  /* Тень третьего слоя */ 
+  0 -20px 1px -9px rgba(0, 0, 0, 0.15);
   /* Отступ для демо */
 }
 .userCard:after {
@@ -36,7 +39,7 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: var(--attention-color);
+  background-color: var(--button-color);
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -91,7 +94,19 @@
     padding-left: 1em;
   }
 }
-.pro {
+.button {
+  margin-bottom: 150px;
+  margin-right: 10px;
+}
+
+.pro { 
+  height: 25px;
+  border: none;
+  border-radius: 41%;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: rgba(202, 200, 200, 0.582);
+  text-transform: uppercase;
 }
 
 .folks {
