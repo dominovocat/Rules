@@ -47,6 +47,7 @@
   position: absolute;
   right: -25px;
   top: calc(50% - 25px);
+  
 }
 .imageWrapper {
   width: 40%;
@@ -92,6 +93,18 @@
   .userInfo {
     margin: 0;
     padding-left: 1em;
+  }
+  .userCard:after{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+  .userName{
+    margin-top:15px ;
+  }
+  .userStatus{
+    margin-bottom: 15px;
   }
 }
 .button {
